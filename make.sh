@@ -6,4 +6,8 @@ flatpak build-update-repo SandboxEscape
 
 # Add and install the repo
 flatpak --user remote-add --no-gpg-verify sandbox-escape SandboxEscape
-flatpak --user install sandbox-escape dev.shipp.Escape
+flatpak --user -y remove dev.shipp.Escape
+flatpak --user -y install sandbox-escape dev.shipp.Escape
+
+# Run the program
+flatpak run dev.shipp.Escape

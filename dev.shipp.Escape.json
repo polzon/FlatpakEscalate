@@ -4,6 +4,9 @@
     "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "program.sh",
+    "finish-args": [
+        "--filesystem=~/.local/share/flatpak/overrides:create"
+    ],
     "modules": [
         {
             "name": "escape",

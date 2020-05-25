@@ -1,0 +1,22 @@
+{
+    "app-id": "dev.shipp.Escape",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "19.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "program.sh",
+    "modules": [
+        {
+            "name": "escape",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -D program.sh /app/bin/program.sh"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "program.sh"
+                }
+            ]
+        }
+    ]
+}
